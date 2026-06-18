@@ -1,0 +1,64 @@
+/* seletor:
+. -> classe
+# -> id
+ */
+header{
+     background: black;
+
+    height: 75px;
+
+    /* Borda: */
+    box-shadow: 1px 4px 4px 0px #00000055;
+    position: relative;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.cabecalho img{
+    height: 79px;
+}
+
+.nav_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.link_header{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    .cabecalho img{
+        height: 35px;
+    }
+
+    .nav_header{
+        gap: 10px;
+    }
+}
+.btn_logout{
+     width: 80px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff008c;
+    color: white;
+    border-radius: 6px;
+    /* Negrito */
+    font-weight: bolder;
+}
+
+.btn_logout:hover{
+    background-color: #181259;
+}
